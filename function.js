@@ -24,20 +24,22 @@ const toTheFourth = function (n){
 
 // EXTRA.. 
 
-const cal =function (a,b,op){ 
-    switch(op) {
-        case '+': 
+const cal=function (a,b,op){ 
+   
+
+    switch (op) {
+        case 'add': 
         return a+b; 
-        break;
-        case '-': 
+        case 'sub': 
         return a-b; 
-        break; 
-        case '/': 
+        case 'div': 
         return a/b; 
-        break; 
-        case '*':
+        case 'mul':
         return a*b; 
+        default:
+        console.log('*calculator only accepts numbers \n*calculator can only add, subtract, divide, or multiply');
         break;
+      
         
     };
 };
